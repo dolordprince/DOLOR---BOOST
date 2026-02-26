@@ -1,0 +1,16 @@
+# Clone your repo
+git clone https://github.com/dolordprince/SSMadinpanel.git
+cd SSMadinpanel
+
+# Create workflow directory
+mkdir -p .github/workflows
+
+# Create the workflow file (paste the YAML above)
+cat > .github/workflows/api-tests.yml << 'EOF'
+[paste the YAML content here]
+EOF
+
+# Commit and push
+git add .github/workflows/api-tests.yml
+git commit -m "Add GitHub Actions Newman test workflow"
+git push origin main
